@@ -11,10 +11,3 @@ This repository contains a series of projects developed using **JavaScript**, **
 Cada projeto inclui funcionalidades específicas que ajudam a entender e aplicar conceitos de programação. Você pode encontrar detalhes sobre as funcionalidades de cada projeto no respectivo diretório.
 
 Each project includes specific features that help understand and apply programming concepts. You can find details about the features of each project in the respective directory.
-
----## 📂 Como Rodar os Projetos / How to Run the Projects
-
-1. **Clone o repositório**:
-
-   ```bash
-   git clone https://github.com/maiki044/javascript-projects.git
