@@ -3,6 +3,7 @@ body {
   background-color: #fefefe;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -26,6 +27,15 @@ header {
   width: 200px;
   padding: 10px;
   text-align: center;
+  background-color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.produto.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .produto img {
@@ -50,4 +60,14 @@ header {
 
 .zap:hover {
   background-color: #128C7E;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark .produto {
+  background-color: #1e1e1e;
+  border-color: #333;
 }
