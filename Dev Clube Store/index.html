@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Clube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dev Clube Store</title>
 </head>
+
 <body>
-    <head>
-        <div class="logo">Store Clube</div>
+    <header>
+        <div class="logo">Dev Clube Store</div>
         <nav>
             <ul>
                 <li>Home</li>
-                <li>Produtos</li>
+                <li>Products</li>
                 <li>Contatos</li>
             </ul>
         </nav>
-    </head>
-    
+    </header>
+
     <main class="container">
         <div class="tech-circle">
             <div class="circle"></div>
@@ -27,45 +35,79 @@
 
         <div class="list">
             <div class="item active">
-                <div class="Product-img">
+
+                <div class="product-img">
                     <img src="./img/apple-watch.png" alt="Apple Watch">
                 </div>
+
                 <div class="content">
                     <p class="product-tag">Novo Lançamento</p>
-                    <p class="product-name">Apple Watch Series 10</p>
-                    <p class="description">
-                        o smartwatch mais avançado da Apple, com monitoramento de saúde aprimorado, GPS integrado e uma tela sempre ativa.
-                    </p>
+                    <p class="product-name">Apple Watch series 10</p>
+                    <p class="description">O Apple Watch Series 10 é o smartwatch <br>
+                        mais avançado da Apple, com recursos de saúde e fitness de última geração.</p>
+                    <button class="btn">Saiba Mais</button>
                 </div>
+
             </div>
+
             <div class="item ">
-                <div class="Product-img">
-                    <img src="./img/samsung-galaxy-watch.png" alt="Samsung Galaxy Watch">
+                <div class="product-img">
+                    <img src="./img/air-pods.png" alt="AirPods">
                 </div>
+
                 <div class="content">
                     <p class="product-tag">Novo Lançamento</p>
-                    <p class="product-name">Samsung Galaxy Watch 6</p>
-                    <p class="description">
-                        o smartwatch mais recente da Samsung, com recursos avançados de saúde, monitoramento de estresse e uma tela AMOLED impressionante.
+                    <p class="product-name">AirPods series 8</p>
+                    <p class="description">Os AirPods Series 10 são os fones de ouvido<br>
+                        sem fio mais avançados da Apple, com qualidade de som excepcional e cancelamento de ruído ativo.
                     </p>
                     <button class="btn">Saiba Mais</button>
                 </div>
-            </div>      
+
             </div>
+
             <div class="item ">
-                <div class="Product-img">
-                    <img src="./img/vision-pro.png" alt="Air Pods Max">
+                <div class="product-img">
+                    <img src="./img/vision-pro.png" alt="Vision Pro">
                 </div>
+
                 <div class="content">
                     <p class="product-tag">Novo Lançamento</p>
-                    <p class="product-name">Samsung Galaxy Watch 6</p>
-                    <p class="description">
-                        o smartwatch mais recente da Samsung, com recursos avançados de saúde, monitoramento de estresse e uma tela AMOLED impressionante.
-                    </p>
+                    <p class="product-name">Vision Pro</p>
+                    <p class="description">O Vision Pro é o headset de realidade mista da Apple, <br>
+                        projetado para oferecer uma experiência imersiva e interativa.</p>
                     <button class="btn">Saiba Mais</button>
                 </div>
+
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="arrow-bnt" id="prev" aria-label="Item anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+            </button>
+            <button class="arrow-bnt" id="next" aria-label="Item seguinte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot "></div>
+                <div class="dot "></div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
