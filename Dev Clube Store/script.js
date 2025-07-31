@@ -7,4 +7,22 @@ const list = document.querySelector(".list");
 
 let active = 0;
 const total = items.length;
-let currentIndex = 0;
+let timer;
+
+function update(direction) {
+    document.querySelector(".item.active").classList.remove("active");
+    document.querySelector(".dot.active").classList.remove("active");
+
+    if (direction > 0) {
+        
+    } else if (direction < 0) {
+        active = (active - 1 + total) % total;
+    }
+}
+prevButton.addEventListener("click", () => {
+    update(-1);
+})
+
+nextButton.addEventListener("click", () => {
+    update(1);
+})
