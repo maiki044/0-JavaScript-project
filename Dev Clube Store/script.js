@@ -33,23 +33,27 @@ function update(direction) {
 
     // Verifica a direção do movimento
     if (direction > 0) {
-        // ➕ Aqui você ainda precisa completar:
-        // Exemplo:
-        // active = (active + 1) % total;
+        active = active + 1;
+        if (active >= total) {
+            // Se for direção positiva (clicou em "próximo"), reseta para o primeiro item
+            active = 0;
+        }
     } else if (direction < 0) {
         // ➖ Se for direção negativa (clicou em "anterior"), decrementa
         active = (active - 1 + total) % total;
     }
 
     // Adiciona novamente a classe "active" ao novo item e dot
-    items[active].classList.add("active");
-    dots[active].classList.add("active");
+    items[active].classList.add('active');
+    dots[active].classList.add('active');
 
     // Se existir número, atualiza o texto com a posição atual
-    if (numberIndicator) {
-        numberIndicator.textContent = `${active + 1} / ${total}`;
-    }
+    numberIndicator.textContent = active +1
 }
+clearInterval(timer); // Limpa o temporizador anterior, se existir
+timer = setInterval(() => {
+    update(1); // Atualiza automaticamente para o próximo item a cada intervalo
+}, 5000); // Intervalo de 5 segundos (5000 milissegundos)
 
 // Adiciona evento ao botão "anterior"
 prevButton.addEventListener("click", () => {
