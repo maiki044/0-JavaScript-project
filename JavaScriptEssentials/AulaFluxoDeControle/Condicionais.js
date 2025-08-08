@@ -24,3 +24,13 @@ if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
     result = "Erro: pelo menos um dos valores inseridos não é um número";
 }
 alert(result);
+let contacts = [{
+    name: "João",
+    phone: "123456789"
+}, {
+    name: "Maria",
+    phone: "987654321"
+}, {
+    name: "Pedro",
+    phone: "456789123"
+}]
