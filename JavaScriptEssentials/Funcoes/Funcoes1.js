@@ -3,3 +3,4 @@ let interval = setInterval(() => {
     console.log(counter);
 // Insert missing line here.
 }, 1000);
+ 
